@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://tpgqvaeyfpalxbxpfrcm.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "NEXT_PUBLIC_API_URL": "@api_url",
+    "NEXT_PUBLIC_AUTH_COOKIE_NAME": "kodelab-auth",
+    "NEXT_PUBLIC_AUTH_COOKIE_DOMAIN": "kodelab.vercel.app",
+    "NEXT_PUBLIC_ENABLE_FORUM": "true",
+    "NEXT_PUBLIC_ENABLE_CURRICULUM": "true",
+    "NEXT_PUBLIC_ENABLE_LEADERBOARD": "true",
+    "NEXT_PUBLIC_ENABLE_ANALYTICS": "false"
+  }
+}
